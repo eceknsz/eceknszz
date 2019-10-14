@@ -1,0 +1,7 @@
+#125,200 ve 350 sayılarının x e bölünce kalan aynı oluyor. en büyük kalanı veren x i bulur.
+for x in range(1,125):
+    a=125%x
+    b=200%x
+    c=350%x
+    if a==b==c:
+        print(x)
