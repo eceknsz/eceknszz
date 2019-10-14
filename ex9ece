@@ -1,13 +1,14 @@
-#1den 999'a kadar olan sayılardan rakamları toplamı 9'dan küçük olan sayıları bulup yan yana yazan programdır.
+#1den 9'a kadar olan sayıları yazar.
 for i in range(1,10):
-    if i<9:
-        for k in range(1,10):
-            for l in range(1,10):
-                if k+l<9:
-                    for m in range(1,10):
-                        for n in range(1,10):
-                            for b in range(1,10):
-                                if m+n+b<9:
-print(i)
-print(10*k+l)
-print(100*m+10*n+b)
+        print(i)
+#10'dan 99'a kadar olan sayılardan rakamları toplamı 9dan küçük olanları bulur.
+for k in range(1,10):
+    for l in range(0,10):
+        if k+l<9:
+            print(10*k+l)
+#100den 999'a kadar olan sayılardan rakamları toplamı 9'dan küçük olanları bulur.
+for m in range(1,10):
+    for n in range(0,10):
+        for b in range(0,10):
+            if m+n+b<9:
+                print(100*m+10*n+b)
