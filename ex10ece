@@ -1,0 +1,7 @@
+#5 rakamlı sayılardan ilk iki ve son iki rakamı birbirine eşit olanları yazar.
+sayac=0
+for i in range (10,100):
+    for j in range(0,10):
+        print(i,j,i,sep="")
+        sayac+=1
+print(sayac)
