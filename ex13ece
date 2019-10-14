@@ -1,0 +1,5 @@
+#iki rakamlı iki sayı yanyana gelince iki sayının toplamınınn 11 katı oluyor.
+for i in range(10,100):
+    for j in range(10*100):
+        if (11*(i+j)==(100*i+j)):
+            print("sayilar: ",i,j)
