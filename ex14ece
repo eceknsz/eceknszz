@@ -1,7 +1,11 @@
 #çarpımları 121212 olan iki tam sayıdan aradaki farkı en küçük olan iki sayıyı bulur.
-for i in range (1,100000):
-    for j in range (1,100000):
-        if 121212==i*j:
-            print("olabilecek iki sayı: ",i,j)
-            
- NOT: burda aradaki fark en küçük olanı bulamadım nasıl yapacağımı.
+min=121212
+
+for i in range (2,121212):
+    if 121212%i==0:
+        j=121212/i
+        if(abs(i-j)<min):
+            min=abs(i-j)
+            a=i
+            b=int(j)
+print(a,b)
