@@ -1,0 +1,20 @@
+def tc_kimlik(value):
+    k=int(value[0])+int(value[2])+int(value[4])+int(value[6])+int(value[8])
+    l=int(value[1])+int(value[3])+int(value[5])+int(value[7])
+    m=int(value[9])
+    n=int(value[10])
+    a=int(value[0])
+    if a!=0:
+        if int(k+l+m)%10==int(n) and int(7*k-l)%10==int(m):
+            print("doğru tc")
+        else:
+            print("yanlış")
+    else:
+        print("ilk rakam sıfır olamaz")
+
+value=input("tc giriniz= ")
+if len(str(value))==11:
+     tc_kimlik(value)
+else:
+    print("sayi 11 haneli değil")
+        
